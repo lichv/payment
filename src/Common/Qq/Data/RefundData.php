@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-08-03 15:14
  * @description:
  */
@@ -22,7 +22,7 @@ use Payment\Utils\ArrayUtil;
  * @property string $operator_id 操作员帐号, 默认为商户号
  *
  * @package Payment\Common\Weixin\Data
- * anthor helei
+ * anthor lichv
  */
 class RefundData extends QqBaseData
 {
@@ -47,7 +47,7 @@ class RefundData extends QqBaseData
 
     /**
      * 检查参数
-     * @author helei
+     * @author lichv
      */
     protected function checkDataParam()
     {

@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-27 17:42
  * @description: 退款统一接口
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -31,7 +31,7 @@ class RefundContext
      *
      * @param array $config 配置文件
      * @throws PayException
-     * @author helei
+     * @author lichv
      */
     public function initRefund($channel, array $config)
     {
@@ -61,7 +61,7 @@ class RefundContext
      *
      * @return array
      * @throws PayException
-     * @author helei
+     * @author lichv
      */
     public function refund(array $data)
     {

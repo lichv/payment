@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-27 15:43
  * @description:
  */
@@ -17,7 +17,7 @@ use Payment\Utils\Curl;
  * 微信企业付款接口
  * Class WxTransfer
  * @package Payment\Trans
- * anthor helei
+ * anthor lichv
  */
 class WxTransfer extends WxBaseStrategy
 {
@@ -39,7 +39,7 @@ class WxTransfer extends WxBaseStrategy
      * @param string $xml
      * @param string $url
      * @return array
-     * @author helei
+     * @author lichv
      */
     protected function curlPost($xml, $url)
     {

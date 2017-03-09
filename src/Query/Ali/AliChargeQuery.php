@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-28 17:23
  * @description: 支付宝订单查询接口
  */
@@ -43,7 +43,7 @@ class AliChargeQuery extends AliBaseStrategy
      * 处理支付宝返回的数据，统一处理后返回
      * @param array $data  支付宝返回的数据
      * @return array
-     * @author helei
+     * @author lichv
      */
     protected function createBackData(array $data)
     {

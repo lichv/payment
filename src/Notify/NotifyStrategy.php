@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-14 17:51
  * @description: 支付回调的策略接口
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -34,7 +34,7 @@ abstract class NotifyStrategy
      * 主要任务，验证返回的数据是否正确
      * @param PayNotifyInterface $notify
      * @return mixed
-     * @author helei
+     * @author lichv
      */
     final public function handle(PayNotifyInterface $notify)
     {
@@ -67,7 +67,7 @@ abstract class NotifyStrategy
      * @param array $notifyData
      *
      * @return boolean
-     * @author helei
+     * @author lichv
      */
     protected function callback(PayNotifyInterface $notify, array $notifyData)
     {
@@ -89,7 +89,7 @@ abstract class NotifyStrategy
      * 如果获取数据失败，返回false
      *
      * @return array|false
-     * @author helei
+     * @author lichv
      */
     abstract public function getNotifyData();
 
@@ -100,7 +100,7 @@ abstract class NotifyStrategy
      *
      * @param array $data  由 $this->getNotifyData() 返回的数据
      * @return boolean
-     * @author helei
+     * @author lichv
      */
     abstract public function checkNotifyData(array $data);
 
@@ -108,7 +108,7 @@ abstract class NotifyStrategy
      * 向客户端返回必要的数据
      * @param array $data 回调机构返回的回调通知数据
      * @return array|false
-     * @author helei
+     * @author lichv
      */
     abstract protected function getRetData(array $data);
 
@@ -117,7 +117,7 @@ abstract class NotifyStrategy
      * @param boolean $flag 每次返回的bool值
      * @param string $msg 通知信息，错误原因
      * @return mixed
-     * @author helei
+     * @author lichv
      */
     abstract protected function replyNotify($flag, $msg = 'OK');
 }

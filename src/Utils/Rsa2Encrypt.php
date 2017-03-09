@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2017-03-07 09:29
  * @description: rsa2加密算法
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -21,7 +21,7 @@ class Rsa2Encrypt
     /**
      * 设置key
      * @param $key
-     * @author helei
+     * @author lichv
      */
     public function setKey($key)
     {
@@ -33,7 +33,7 @@ class Rsa2Encrypt
      * @param string $data 签名的数组
      * @throws \Exception
      * @return string
-     * @author helei
+     * @author lichv
      */
     public function encrypt($data)
     {
@@ -59,7 +59,7 @@ class Rsa2Encrypt
      * @param string $content 需要解密的内容，密文
      * @throws \Exception
      * @return string
-     * @author helei
+     * @author lichv
      */
     public function decrypt($content)
     {
@@ -94,7 +94,7 @@ class Rsa2Encrypt
      * @param string $sign 要校对的的签名结果
      * @throws \Exception
      * @return bool
-     * @author helei
+     * @author lichv
      */
     public function rsaVerify($data, $sign)
     {

@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-14 17:42
  * @description: 暴露给客户端调用的接口
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -32,7 +32,7 @@ use Payment\Common\PayException;
  * 支付的上下文类
  *
  * @package Payment
- * anthor helei
+ * anthor lichv
  */
 class ChargeContext
 {
@@ -49,7 +49,7 @@ class ChargeContext
      *  - @see Config
      * @param array $config 配置文件
      * @throws PayException
-     * @author helei
+     * @author lichv
      */
     public function initCharge($channel, array $config)
     {
@@ -127,7 +127,7 @@ class ChargeContext
      *
      * @return array
      * @throws PayException
-     * @author helei
+     * @author lichv
      */
     public function charge(array $data)
     {

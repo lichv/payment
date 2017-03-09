@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-06-08 13:02
  * @description: 数据解析的工具类，主要处理，xml到数组  数组到xml的转化
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 

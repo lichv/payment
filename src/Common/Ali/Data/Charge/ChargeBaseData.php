@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-20 14:33
  * @description:
  */
@@ -27,14 +27,14 @@ use Payment\Utils\ArrayUtil;
  * @property string $store_id  	商户门店编号
  *
  * @package Payment\Common\Ali\Data\Charge
- * anthor helei
+ * anthor lichv
  */
 abstract class ChargeBaseData extends AliBaseData
 {
 
     /**
      * 构建 APP支付 加密数据
-     * @author helei
+     * @author lichv
      */
     protected function buildData()
     {
@@ -70,7 +70,7 @@ abstract class ChargeBaseData extends AliBaseData
      *
      * 如果输入参数不符合规范，直接抛出异常
      *
-     * @author helei
+     * @author lichv
      */
     protected function checkDataParam()
     {

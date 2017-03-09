@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-06-07 21:01
  * @description:  常用的数组处理工具
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -15,7 +15,7 @@ class ArrayUtil
      * 移除空值的key
      * @param $para
      * @return array
-     * @author helei
+     * @author lichv
      */
     public static function paraFilter($para)
     {
@@ -71,7 +71,7 @@ class ArrayUtil
      * 对输入的数组进行字典排序
      * @param array $param 需要排序的数组
      * @return array
-     * @author helei
+     * @author lichv
      */
     public static function arraySort(array $param)
     {

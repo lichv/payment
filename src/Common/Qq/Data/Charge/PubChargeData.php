@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: helei
+ * User: lichv
  * Date: 16/7/31
  * Time: 上午9:20
  */
@@ -18,7 +18,7 @@ use Payment\Utils\ArrayUtil;
  * @property string $openid  trade_type=JSAPI，此参数必传，用户在商户appid下的唯一标识
  *
  * @package Payment\Common\Weixin\Data\Charge
- * anthor helei
+ * anthor lichv
  */
 class PubChargeData extends ChargeBaseData
 {

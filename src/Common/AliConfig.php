@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-15 14:56
  * @description: 支付宝配置文件  所有支付的配置文件，均需要继承 ConfigInterface 这个接口
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -93,7 +93,7 @@ final class AliConfig extends ConfigInterface
      * 检查传入的配置文件信息是否正确
      * @param array $config
      * @throws PayException
-     * @author helei
+     * @author lichv
      */
     private function initConfig(array $config)
     {

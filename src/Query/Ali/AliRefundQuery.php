@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-12-31 17:55
  * @description:
  */
@@ -17,7 +17,7 @@ use Payment\Common\PayException;
  * 支付宝退款订单查询
  * Class AliRefundQuery
  * @package Payment\Query
- * anthor helei
+ * anthor lichv
  */
 class AliRefundQuery extends AliBaseStrategy
 {
@@ -48,7 +48,7 @@ class AliRefundQuery extends AliBaseStrategy
      * 返回数据给客户端  未完成，目前没有数据提供
      * @param array $data
      * @return array
-     * @author helei
+     * @author lichv
      */
     protected function createBackData(array $data)
     {

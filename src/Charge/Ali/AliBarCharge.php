@@ -14,7 +14,7 @@ use Payment\Utils\Curl;
  * Class AliBarCharge
  * @package Payment\Charge\Weixin
  *
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 class AliBarCharge extends AliBaseStrategy
@@ -48,7 +48,7 @@ class AliBarCharge extends AliBaseStrategy
      *
      * @throws PayException
      * @return string  可生产二维码的uri
-     * @author helei
+     * @author lichv
      */
     protected function retData(array $ret)
     {

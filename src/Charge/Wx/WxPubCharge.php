@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-14 18:28
  * @description: 微信 公众号 支付接口
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -19,7 +19,7 @@ use Payment\Common\Weixin\WxBaseStrategy;
  * 微信公众号支付
  *
  * @package Payment\Charge\Weixin
- * anthor helei
+ * anthor lichv
  */
 class WxPubCharge extends WxBaseStrategy
 {
@@ -45,7 +45,7 @@ class WxPubCharge extends WxBaseStrategy
      *  'paySign'  => '',  // 签名
      * ];
      * ```
-     * @author helei
+     * @author lichv
      */
     protected function retData(array $ret)
     {

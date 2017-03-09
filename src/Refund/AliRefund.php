@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-27 10:36
  * @description:
  */
@@ -48,7 +48,7 @@ class AliRefund extends AliBaseStrategy
      * 处理返回的数据
      * @param array $data
      * @return array
-     * @author helei
+     * @author lichv
      */
     protected function createBackData(array $data)
     {

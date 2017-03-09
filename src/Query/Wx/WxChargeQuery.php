@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-28 17:25
  * @description:
  */
@@ -18,7 +18,7 @@ class WxChargeQuery extends WxBaseStrategy
 
     /**
      * 返回查询订单的数据
-     * @author helei
+     * @author lichv
      */
     protected function getBuildDataClass()
     {
@@ -28,7 +28,7 @@ class WxChargeQuery extends WxBaseStrategy
     /**
      * 返回微信查询的url
      * @return string
-     * @author helei
+     * @author lichv
      */
     protected function getReqUrl()
     {
@@ -39,7 +39,7 @@ class WxChargeQuery extends WxBaseStrategy
      * 处理通知的返回数据
      * @param array $data
      * @return mixed
-     * @author helei
+     * @author lichv
      */
     protected function retData(array $data)
     {
@@ -71,7 +71,7 @@ class WxChargeQuery extends WxBaseStrategy
      * 返回数据给客户端
      * @param array $data
      * @return array
-     * @author helei
+     * @author lichv
      */
     protected function createBackData(array $data)
     {

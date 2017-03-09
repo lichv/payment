@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-08-04 09:42
  * @description:
  */
@@ -28,7 +28,7 @@ use Payment\Utils\ArrayUtil;
  * @property string $client_ip 调用接口的机器Ip地址
  *
  * @package Payment\Common\Weixin\Data
- * anthor helei
+ * anthor lichv
  */
 class TransferData extends WxBaseData
 {
@@ -56,7 +56,7 @@ class TransferData extends WxBaseData
 
     /**
      * 检查相关参数是否设置
-     * @author helei
+     * @author lichv
      */
     protected function checkDataParam()
     {

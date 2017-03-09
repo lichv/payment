@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-20 16:46
  * @description:
  */
@@ -17,7 +17,7 @@ use Payment\Utils\DataParser;
  * Class WxNotify
  * 微信回调处理
  * @package Payment\Notify
- * anthor helei
+ * anthor lichv
  */
 class WxNotify extends NotifyStrategy
 {
@@ -41,7 +41,7 @@ class WxNotify extends NotifyStrategy
     /**
      * 获取微信返回的异步通知数据
      * @return array|bool
-     * @author helei
+     * @author lichv
      */
     public function getNotifyData()
     {
@@ -63,7 +63,7 @@ class WxNotify extends NotifyStrategy
      * 检查微信异步通知的数据是否正确
      * @param array $data
      *
-     * @author helei
+     * @author lichv
      * @return boolean
      */
     public function checkNotifyData(array $data)
@@ -82,7 +82,7 @@ class WxNotify extends NotifyStrategy
      * 检查微信返回的数据是否被篡改过
      * @param array $retData
      * @return boolean
-     * @author helei
+     * @author lichv
      */
     protected function verifySign(array $retData)
     {
@@ -115,7 +115,7 @@ class WxNotify extends NotifyStrategy
      * @param array $data
      *
      * @return array
-     * @author helei
+     * @author lichv
      */
     protected function getRetData(array $data)
     {
@@ -151,7 +151,7 @@ class WxNotify extends NotifyStrategy
      * 处理完后返回的数据格式
      * @param bool $flag
      * @param string $msg 通知信息，错误原因
-     * @author helei
+     * @author lichv
      * @return string
      */
     protected function replyNotify($flag, $msg = 'OK')

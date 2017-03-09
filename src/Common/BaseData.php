@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-28 18:05
  * @description: 支付相关接口的数据基类
  */
@@ -50,7 +50,7 @@ abstract class BaseData
      * 获取变量，通过魔术方法
      * @param string $name
      * @return null|string
-     * @author helei
+     * @author lichv
      */
     public function __get($name)
     {
@@ -65,7 +65,7 @@ abstract class BaseData
      * 设置变量
      * @param $name
      * @param $value
-     * @author helei
+     * @author lichv
      */
     public function __set($name, $value)
     {
@@ -74,7 +74,7 @@ abstract class BaseData
 
     /**
      * 设置签名
-     * @author helei
+     * @author lichv
      */
     public function setSign()
     {
@@ -92,7 +92,7 @@ abstract class BaseData
     /**
      * 返回处理之后的数据
      * @return array
-     * @author helei
+     * @author lichv
      */
     public function getData()
     {

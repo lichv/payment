@@ -1,10 +1,10 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-20 16:12
  * @description: 提供给客户端实现的 支付异步回调 接口
  *
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -19,7 +19,7 @@ interface PayNotifyInterface
      * @param array $data 返回的数据
      *
      * @return boolean
-     * @author helei
+     * @author lichv
      */
     public function notifyProcess(array $data);
 }

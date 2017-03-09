@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-06-07 19:38
  * @description: 一个轻量级的网络操作类，实现GET、POST、UPLOAD、DOWNLOAD常用操作，支持链式写法。
- * @link      https://github.com/helei112g/PHP-Curl
+ * @link      https://github.com/lichv112g/PHP-Curl
  * 
  */
 

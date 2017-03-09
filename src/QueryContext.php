@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-28 17:24
  * @description:
  */
@@ -35,7 +35,7 @@ class QueryContext
      *
      * @param array $config 配置文件
      * @throws PayException
-     * @author helei
+     * @author lichv
      */
     public function initQuery($channel, array $config)
     {
@@ -91,7 +91,7 @@ class QueryContext
      *
      * @return array
      * @throws PayException
-     * @author helei
+     * @author lichv
      */
     public function query(array $data)
     {

@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-14 17:56
  * @description: 微信 app 支付接口
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -38,7 +38,7 @@ class QqAppCharge extends QqBaseStrategy
      *  'sign'  => '',  // 签名
      * ];
      * ```
-     * @author helei
+     * @author lichv
      */
     protected function retData(array $ret)
     {

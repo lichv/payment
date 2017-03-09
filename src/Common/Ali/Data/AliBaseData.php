@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-15 17:28
  * @description: 支付宝相关数据的基类
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -38,7 +38,7 @@ use Payment\Utils\RsaEncrypt;
  * @property string $partner  合作id
  *
  * @package Payment\Charge\Ali\Data
- * anthor helei
+ * anthor lichv
  */
 abstract class AliBaseData extends BaseData
 {
@@ -56,7 +56,7 @@ abstract class AliBaseData extends BaseData
      * 签名算法实现
      * @param string $signStr
      * @return string
-     * @author helei
+     * @author lichv
      */
     protected function makeSign($signStr)
     {

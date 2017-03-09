@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2017-03-06 22:32
  * @description:
  */
@@ -17,13 +17,13 @@ use Payment\Utils\ArrayUtil;
  * @property string $out_trade_no 商户系统内部的订单号
  *
  * @package Payment\Common\Ali\Data\Query
- * anthor helei
+ * anthor lichv
  */
 class ChargeQueryData extends QueryBaseData
 {
     /**
      * 检查参数
-     * @author helei
+     * @author lichv
      */
     protected function checkDataParam()
     {

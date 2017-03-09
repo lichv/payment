@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-26 18:18
  * @description:
  */
@@ -24,14 +24,14 @@ use Payment\Utils\ArrayUtil;
  * @property string $store_id  	商户门店编号
  *
  * @package Payment\Common\Ali\Data
- * anthor helei
+ * anthor lichv
  */
 class RefundData extends AliBaseData
 {
 
     /**
      * 检查退款数据是否正常
-     * @author helei
+     * @author lichv
      */
     protected function checkDataParam()
     {

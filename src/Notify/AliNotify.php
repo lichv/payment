@@ -1,10 +1,10 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-20 16:21
  * @description: 支付宝回调通知
  *
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -42,7 +42,7 @@ class AliNotify extends NotifyStrategy
      * 如果获取数据失败，返回false
      *
      * @return array|boolean
-     * @author helei
+     * @author lichv
      */
     public function getNotifyData()
     {
@@ -61,7 +61,7 @@ class AliNotify extends NotifyStrategy
      *
      * @param array $data  由 $this->getNotifyData() 返回的数据
      * @return boolean
-     * @author helei
+     * @author lichv
      */
     public function checkNotifyData(array $data)
     {
@@ -81,7 +81,7 @@ class AliNotify extends NotifyStrategy
      * 向客户端返回必要的数据
      * @param array $data 回调机构返回的回调通知数据
      * @return array|false
-     * @author helei
+     * @author lichv
      */
     protected function getRetData(array $data)
     {
@@ -123,7 +123,7 @@ class AliNotify extends NotifyStrategy
      * @param boolean $flag 每次返回的bool值
      * @param string $msg 错误原因  后期考虑记录日志
      * @return string
-     * @author helei
+     * @author lichv
      */
     protected function replyNotify($flag, $msg = '')
     {
@@ -138,7 +138,7 @@ class AliNotify extends NotifyStrategy
      * 返回统一的交易状态
      * @param $status
      * @return string
-     * @author helei
+     * @author lichv
      */
     protected function getTradeStatus($status)
     {
@@ -153,7 +153,7 @@ class AliNotify extends NotifyStrategy
      * 检查支付宝数据 签名是否被篡改
      * @param array $data
      * @return boolean
-     * @author helei
+     * @author lichv
      */
     protected function verifySign(array $data)
     {

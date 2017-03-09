@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-27 10:51
  * @description:
  */
@@ -17,7 +17,7 @@ use Payment\Utils\Curl;
  * Class WxRefund
  * 微信退款操作
  * @package Payment\Refund
- * anthor helei
+ * anthor lichv
  */
 class QqRefund extends QqBaseStrategy
 {
@@ -31,7 +31,7 @@ class QqRefund extends QqBaseStrategy
      * @param string $xml
      * @param string $url
      * @return array
-     * @author helei
+     * @author lichv
      */
     protected function curlPost($xml, $url)
     {
@@ -52,7 +52,7 @@ class QqRefund extends QqBaseStrategy
      * 处理退款的返回数据
      * @param array $ret
      * @return mixed
-     * @author helei
+     * @author lichv
      */
     protected function retData(array $ret)
     {
@@ -83,7 +83,7 @@ class QqRefund extends QqBaseStrategy
      * 处理返回的数据
      * @param array $data
      * @return array
-     * @author helei
+     * @author lichv
      */
     protected function createBackData(array $data)
     {
@@ -117,7 +117,7 @@ class QqRefund extends QqBaseStrategy
     /**
      * 返回退款的url
      * @return null|string
-     * @author helei
+     * @author lichv
      */
     protected function getReqUrl()
     {

@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-08-02 17:55
  * @description:
  */
@@ -16,7 +16,7 @@ use Payment\Common\QqConfig;
  * 微信退款订单查询
  * Class WxRefudnQuery
  * @package Payment\Query
- * anthor helei
+ * anthor lichv
  */
 class QqRefundQuery extends QqBaseStrategy
 {
@@ -34,7 +34,7 @@ class QqRefundQuery extends QqBaseStrategy
      * 处理通知的返回数据
      * @param array $data
      * @return mixed
-     * @author helei
+     * @author lichv
      */
     protected function retData(array $data)
     {
@@ -66,7 +66,7 @@ class QqRefundQuery extends QqBaseStrategy
      * 返回数据给客户端
      * @param array $data
      * @return array
-     * @author helei
+     * @author lichv
      */
     protected function createBackData(array $data)
     {

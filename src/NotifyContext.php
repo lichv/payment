@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-14 17:42
  * @description: 暴露给客户端调用的接口
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -32,7 +32,7 @@ class NotifyContext
      *
      * @param array $config 配置文件
      * @throws PayException
-     * @author helei
+     * @author lichv
      */
     public function initNotify($channel, array $config)
     {
@@ -70,7 +70,7 @@ class NotifyContext
      * @param PayNotifyInterface $notify
      * @return array
      * @throws PayException
-     * @author helei
+     * @author lichv
      */
     public function notify(PayNotifyInterface $notify)
     {

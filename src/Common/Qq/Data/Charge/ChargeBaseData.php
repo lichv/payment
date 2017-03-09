@@ -1,10 +1,10 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: helei
+ * User: lichv
  * Date: 16/7/30
  * Time: 下午11:08
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 

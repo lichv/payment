@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-14 17:56
  * @description: 支付宝 即时到账 接口
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -18,7 +18,7 @@ class AliWebCharge extends AliBaseStrategy
     /**
      * 获取支付对应的数据完成类
      * @return string
-     * @author helei
+     * @author lichv
      */
     protected function getBuildDataClass()
     {

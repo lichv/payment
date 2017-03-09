@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-28 18:04
  * @description: 微信的策略基类
  */
@@ -21,7 +21,7 @@ use Payment\Utils\DataParser;
  * 微信策略基类
  *
  * @package Payment\Common\Weixin
- * anthor helei
+ * anthor lichv
  */
 abstract class QqBaseStrategy implements BaseStrategy
 {
@@ -58,7 +58,7 @@ abstract class QqBaseStrategy implements BaseStrategy
     /**
      * 获取支付对应的数据完成类
      * @return BaseData
-     * @author helei
+     * @author lichv
      */
     abstract protected function getBuildDataClass();
 
@@ -67,7 +67,7 @@ abstract class QqBaseStrategy implements BaseStrategy
      * @param string $xml
      * @return mixed
      * @throws PayException
-     * @author helei
+     * @author lichv
      */
     protected function sendReq($xml)
     {
@@ -97,7 +97,7 @@ abstract class QqBaseStrategy implements BaseStrategy
      * @param string $xml
      * @param string $url
      * @return array
-     * @author helei
+     * @author lichv
      */
     protected function curlPost($xml, $url)
     {
@@ -109,7 +109,7 @@ abstract class QqBaseStrategy implements BaseStrategy
 
     /**
      * 获取需要的url  默认返回下单的url
-     * @author helei
+     * @author lichv
      * @return string|null
      */
     protected function getReqUrl()
@@ -119,7 +119,7 @@ abstract class QqBaseStrategy implements BaseStrategy
 
     /**
      * @param array $data
-     * @author helei
+     * @author lichv
      * @throws PayException
      * @return array|string
      */
@@ -151,7 +151,7 @@ abstract class QqBaseStrategy implements BaseStrategy
      * 处理微信的返回值并返回给客户端
      * @param array $ret
      * @return mixed
-     * @author helei
+     * @author lichv
      */
     protected function retData(array $ret)
     {
@@ -162,7 +162,7 @@ abstract class QqBaseStrategy implements BaseStrategy
      * 检查微信返回的数据是否被篡改过
      * @param array $retData
      * @return boolean
-     * @author helei
+     * @author lichv
      */
     protected function signVerify(array $retData)
     {

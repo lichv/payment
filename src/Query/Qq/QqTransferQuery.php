@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-08-04 10:30
  * @description:
  */
@@ -15,7 +15,7 @@ use Payment\Utils\Curl;
 /**
  * Class WxTransferQuery
  * @package Payment\Query
- * anthor helei
+ * anthor lichv
  */
 class QqTransferQuery extends QqBaseStrategy
 {
@@ -29,7 +29,7 @@ class QqTransferQuery extends QqBaseStrategy
      * @param string $xml
      * @param string $url
      * @return array
-     * @author helei
+     * @author lichv
      */
     protected function curlPost($xml, $url)
     {
@@ -49,7 +49,7 @@ class QqTransferQuery extends QqBaseStrategy
     /**
      * 返回付款查询url
      * @return string
-     * @author helei
+     * @author lichv
      */
     protected function getReqUrl()
     {
@@ -60,7 +60,7 @@ class QqTransferQuery extends QqBaseStrategy
      * 处理通知的返回数据
      * @param array $data
      * @return mixed
-     * @author helei
+     * @author lichv
      */
     protected function retData(array $data)
     {
@@ -92,7 +92,7 @@ class QqTransferQuery extends QqBaseStrategy
      * 返回数据给客户端
      * @param array $data
      * @return array
-     * @author helei
+     * @author lichv
      */
     protected function createBackData(array $data)
     {

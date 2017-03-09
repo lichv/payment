@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: helei
+ * User: lichv
  * Date: 2017/3/6
  * Time: 下午10:37
  */
@@ -17,7 +17,7 @@ abstract class QueryBaseData extends AliBaseData
 {
     /**
      * 构建 APP支付 加密数据
-     * @author helei
+     * @author lichv
      */
     protected function buildData()
     {

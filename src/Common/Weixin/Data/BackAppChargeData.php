@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-08-02 09:41
  * @description:
  */
@@ -17,7 +17,7 @@ use Payment\Common\PayException;
  * @property string $prepay_id   预支付交易会话标识
  *
  * @package Payment\Common\Weixin\Data
- * anthor helei
+ * anthor lichv
  */
 class BackAppChargeData extends WxBaseData
 {

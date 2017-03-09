@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: helei
+ * User: lichv
  * Date: 2017/3/7
  * Time: 下午3:58
  */
@@ -50,7 +50,7 @@ class AliTransferQuery extends AliBaseStrategy
      * 返回数据给客户端  未完成，目前没有数据提供
      * @param array $data
      * @return array
-     * @author helei
+     * @author lichv
      */
     protected function createBackData(array $data)
     {

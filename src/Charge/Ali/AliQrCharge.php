@@ -13,7 +13,7 @@ use Payment\Common\PayException;
  * Class AliQrCharge
  * @package Payment\Charge\Weixin
  *
- * @link      https://github.com/helei112g/payment
+ * @link      https://github.com/lichv112g/payment
  * 
  */
 class AliQrCharge extends AliBaseStrategy
@@ -30,7 +30,7 @@ class AliQrCharge extends AliBaseStrategy
      *
      * @throws PayException
      * @return string  可生产二维码的uri
-     * @author helei
+     * @author lichv
      */
     protected function retData(array $ret)
     {

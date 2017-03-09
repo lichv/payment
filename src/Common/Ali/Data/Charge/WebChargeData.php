@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-15 17:28
  * @description: 即时到帐 接口的数据处理类
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -20,13 +20,13 @@ use Payment\Utils\ArrayUtil;
  * @property string $paymethod
  *
  * @package Payment\Charge\Ali\Data
- * anthor helei
+ * anthor lichv
  */
 class WebChargeData extends ChargeBaseData
 {
     /**
      * 设置签名
-     * @author helei
+     * @author lichv
      */
     public function setSign()
     {
@@ -43,7 +43,7 @@ class WebChargeData extends ChargeBaseData
 
     /**
      * 构建 即时到帐 加密数据
-     * @author helei
+     * @author lichv
      */
     protected function buildData()
     {

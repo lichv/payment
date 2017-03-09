@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-27 15:40
  * @description:
  */
@@ -28,7 +28,7 @@ class TransferContext
      *
      * @param array $config 配置文件
      * @throws PayException
-     * @author helei
+     * @author lichv
      */
     public function initTransfer($channel, array $config)
     {
@@ -58,7 +58,7 @@ class TransferContext
      *
      * @return array
      * @throws PayException
-     * @author helei
+     * @author lichv
      */
     public function transfer(array $data)
     {

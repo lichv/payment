@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-27 13:05
  * @description:
  */
@@ -28,13 +28,13 @@ use Payment\Utils\ArrayUtil;
  * @property string $remark 转账备注  当付款方为企业账户，且转账金额达到（大于等于）50000元，remark不能为空
  *
  * @package Payment\Common\Ali\Data
- * anthor helei
+ * anthor lichv
  */
 class TransData extends AliBaseData
 {
     /**
      * 检查参数是否合法
-     * @author helei
+     * @author lichv
      */
     protected function checkDataParam()
     {

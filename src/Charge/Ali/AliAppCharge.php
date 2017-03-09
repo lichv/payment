@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-14 18:20
  * @description: 支付宝移动支付接口
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -20,7 +20,7 @@ class AliAppCharge extends AliBaseStrategy
     /**
      * 获取支付对应的数据完成类
      * @return string
-     * @author helei
+     * @author lichv
      */
     protected function getBuildDataClass()
     {

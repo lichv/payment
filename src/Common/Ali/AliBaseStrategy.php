@@ -1,9 +1,9 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-15 17:10
  * @description: 支付宝支付接口的基类。
- * @link      https://github.com/helei112g/payment/tree/paymentv2
+ * @link      https://github.com/lichv/payment
  * 
  */
 
@@ -54,7 +54,7 @@ abstract class AliBaseStrategy implements BaseStrategy
     /**
      * 获取支付对应的数据完成类
      * @return BaseData
-     * @author helei
+     * @author lichv
      */
     abstract protected function getBuildDataClass();
 
@@ -118,7 +118,7 @@ abstract class AliBaseStrategy implements BaseStrategy
      * 处理支付宝的返回值并返回给客户端
      * @param array $data
      * @return string|array
-     * @author helei
+     * @author lichv
      */
     protected function retData(array $data)
     {
@@ -141,7 +141,7 @@ abstract class AliBaseStrategy implements BaseStrategy
      * 返回统一的交易状态  做一些转化，方便处理
      * @param $status
      * @return string
-     * @author helei
+     * @author lichv
      */
     protected function getTradeStatus($status)
     {
@@ -163,7 +163,7 @@ abstract class AliBaseStrategy implements BaseStrategy
      * @param array $data
      * @param string $sign  支付宝返回的签名结果
      * @return bool
-     * @author helei
+     * @author lichv
      */
     protected function verifySign(array $data, $sign)
     {

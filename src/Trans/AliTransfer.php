@@ -1,6 +1,6 @@
 <?php
 /**
- * @author: helei
+ * @author: lichv
  * @createTime: 2016-07-27 15:28
  * @description: 支付宝批量付款接口
  */
@@ -42,7 +42,7 @@ class AliTransfer extends AliBaseStrategy
      * 处理返回的数据
      * @param array $data
      * @return array
-     * @author helei
+     * @author lichv
      */
     protected function createBackData(array $data)
     {
