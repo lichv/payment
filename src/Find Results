@@ -1,9 +1,0 @@
-Searching 80 files for "riverslei"
-
-/Users/chante/data/www/git/payment/composer.json:
-    1  {
-    2:     "name": "riverslei/payment",
-    3      "type": "library",
-    4      "description": "支付宝支付、微信支付集成SDK。整合集成快速接入，支持支付宝最新接口",
-
-1 match in 1 file

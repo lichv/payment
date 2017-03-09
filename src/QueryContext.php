@@ -15,6 +15,9 @@ use Payment\Query\Ali\AliTransferQuery;
 use Payment\Query\Wx\WxChargeQuery;
 use Payment\Query\Wx\WxRefundQuery;
 use Payment\Query\Wx\WxTransferQuery;
+use Payment\Query\Qq\QqChargeQuery;
+use Payment\Query\Qq\QqRefundQuery;
+use Payment\Query\Qq\QqTransferQuery;
 
 class QueryContext
 {
@@ -57,6 +60,17 @@ class QueryContext
                 case Config::WX_TRANSFER:// 微信转款订单查询
                     $this->query = new WxTransferQuery($config);
                     break;
+
+                case Config::QQ_CHARGE:// 微信支付订单查询
+                    $this->query = new QqChargeQuery($config);
+                    break;
+                case Config::QQ_REFUND:// 微信退款订单查询
+                    $this->query = new QqRefundQuery($config);
+                    break;
+                case Config::QQ_TRANSFER:// 微信转款订单查询
+                    $this->query = new QqTransferQuery($config);
+                    break;
+
                 default:
                     throw new PayException('当前仅支持：ALI_CHARGE ALI_REFUND WX_CHARGE WX_REFUND WX_TRANSFER');
             }

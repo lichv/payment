@@ -13,6 +13,7 @@ use Payment\Common\BaseStrategy;
 use Payment\Common\PayException;
 use Payment\Refund\AliRefund;
 use Payment\Refund\WxRefund;
+use Payment\Refund\QqRefund;
 
 class RefundContext
 {
@@ -41,6 +42,9 @@ class RefundContext
                     break;
                 case Config::WX_REFUND:
                     $this->refund = new WxRefund($config);
+                    break;
+                case Config::QQ_REFUND:
+                    $this->refund = new QqRefund($config);
                     break;
                 default:
                     throw new PayException('当前仅支持：ALI WEIXIN两个常量');

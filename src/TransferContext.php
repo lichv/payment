@@ -11,6 +11,7 @@ use Payment\Common\BaseStrategy;
 use Payment\Common\PayException;
 use Payment\Trans\AliTransfer;
 use Payment\Trans\WxTransfer;
+use Payment\Trans\QqTransfer;
 
 class TransferContext
 {
@@ -38,6 +39,9 @@ class TransferContext
                     break;
                 case Config::WX_TRANSFER:
                     $this->transfer = new WxTransfer($config);
+                    break;
+                case Config::QQ_TRANSFER:
+                    $this->transfer = new QqTransfer($config);
                     break;
                 default:
                     throw new PayException('当前仅支持：ALI WEIXIN两个常量');

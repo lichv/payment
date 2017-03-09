@@ -19,6 +19,10 @@ use Payment\Charge\Wx\WxBarCharge;
 use Payment\Charge\Wx\WxPubCharge;
 use Payment\Charge\Wx\WxQrCharge;
 use Payment\Charge\Wx\WxWapCharge;
+use Payment\Charge\Qq\QqAppCharge;
+use Payment\Charge\Qq\QqBarCharge;
+use Payment\Charge\Qq\QqPubCharge;
+use Payment\Charge\Qq\QqQrCharge;
 use Payment\Common\BaseStrategy;
 use Payment\Common\PayException;
 
@@ -84,6 +88,20 @@ class ChargeContext
                 case Config::WX_CHANNEL_BAR:
                     $this->channel = new WxBarCharge($config);
                     break;
+
+                case Config::QQ_CHANNEL_APP:
+                    $this->channel = new QqAppCharge($config);
+                    break;
+                case Config::QQ_CHANNEL_PUB:
+                    $this->channel = new QqPubCharge($config);
+                    break;
+                case Config::QQ_CHANNEL_QR:
+                    $this->channel = new QqQrCharge($config);
+                    break;
+                case Config::QQ_CHANNEL_BAR:
+                    $this->channel = new QqBarCharge($config);
+                    break;
+
                 default:
                     throw new PayException('当前仅支持：支付宝 与 微信');
             }

@@ -13,6 +13,7 @@ use Payment\Notify\AliNotify;
 use Payment\Notify\NotifyStrategy;
 use Payment\Notify\PayNotifyInterface;
 use Payment\Notify\WxNotify;
+use Payment\Notify\QqNotify;
 use Payment\Common\PayException;
 
 class NotifyContext
@@ -42,6 +43,9 @@ class NotifyContext
                     break;
                 case Config::WX_CHARGE:
                     $this->notify = new WxNotify($config);
+                    break;
+                case Config::QQ_CHARGE:
+                    $this->notify = new QqNotify($config);
                     break;
                 default:
                     throw new PayException('当前仅支持：ALI_CHARGE WX_CHARGE 两个常量');

@@ -61,6 +61,28 @@ final class Config
     const WX_TRANSFER = 'wx_transfer';// 转账
 
 
+    //========================= QQ钱包相关接口 =======================//
+    // 支付常量
+    const QQ_CHANNEL_APP = 'qq_app';// QQ钱包 APP 支付
+
+    const QQ_CHANNEL_PUB = 'qq_pub';// QQ钱包 公众账号 支付
+
+    const QQ_CHANNEL_QR = 'qq_qr';// QQ钱包 扫码支付  (可以使用app的帐号，也可以用公众的帐号完成)
+
+    const QQ_CHANNEL_BAR = 'qq_bar';// QQ钱包 刷卡支付，与支付宝的条码支付对应
+
+    const QQ_CHANNEL_WAP = 'qq_wap';// 微信wap支付，针对特定用户
+
+    // 其他相关常量
+    const QQ_CHARGE = 'qq_charge';// 支付
+
+    const QQ_REFUND = 'qq_refund';// 退款
+
+    const QQ_RED = 'qq_red';// 红包
+
+    const QQ_TRANSFER = 'qq_transfer';// 转账
+
+
 
     //========================= 金额问题设置 =======================//
     const PAY_MIN_FEE = '0.01';// 支付的最小金额
