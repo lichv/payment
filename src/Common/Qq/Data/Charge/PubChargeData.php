@@ -13,11 +13,11 @@ use Payment\Utils\ArrayUtil;
 
 /**
  * Class PubChargeData
- * 微信公众号支付
+ * QQ钱包公众号支付
  *
  * @property string $openid  trade_type=JSAPI，此参数必传，用户在商户appid下的唯一标识
  *
- * @package Payment\Common\Weixin\Data\Charge
+ * @package Payment\Common\Qq\Data\Charge
  * anthor lichv
  */
 class PubChargeData extends ChargeBaseData

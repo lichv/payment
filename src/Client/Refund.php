@@ -24,6 +24,8 @@ class Refund
 
         Config::WX_REFUND,// 微信
 
+        Config::QQ_REFUND,// 微信
+
         'cmb_wallet',// 招行一网通
         'applepay_upacp',// Apple Pay
     ];

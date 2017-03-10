@@ -15,7 +15,7 @@ use Payment\Utils\ArrayUtil;
  * Class WebChargeData
  *
  * @inheritdoc
- * @property string $auth_code  扫码支付授权码，设备读取用户微信中的条码或者二维码信息
+ * @property string $auth_code  扫码支付授权码，设备读取用户QQ钱包中的条码或者二维码信息
  *
  * @package Payment\Common\Weixin\Data\Charge
  */

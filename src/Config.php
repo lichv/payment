@@ -71,8 +71,6 @@ final class Config
 
     const QQ_CHANNEL_BAR = 'qq_bar';// QQ钱包 刷卡支付，与支付宝的条码支付对应
 
-    const QQ_CHANNEL_WAP = 'qq_wap';// 微信wap支付，针对特定用户
-
     // 其他相关常量
     const QQ_CHARGE = 'qq_charge';// 支付
 

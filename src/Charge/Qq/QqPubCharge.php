@@ -11,14 +11,14 @@ namespace Payment\Charge\Qq;
 
 use Payment\Common\Qq\Data\BackPubChargeData;
 use Payment\Common\Qq\Data\Charge\PubChargeData;
-use Payment\Common\Qq\WxBaseStrategy;
+use Payment\Common\Qq\QqBaseStrategy;
 
 /**
  * Class WxPubCharge
  *
  * 微信公众号支付
  *
- * @package Payment\Charge\Weixin
+ * @package Payment\Charge\Qq
  * anthor lichv
  */
 class QqPubCharge extends QqBaseStrategy

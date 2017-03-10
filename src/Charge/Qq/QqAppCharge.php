@@ -22,7 +22,7 @@ class QqAppCharge extends QqBaseStrategy
     }
 
     /**
-     * 处理APP支付的返回值。直接返回与微信文档对应的字段
+     * 处理APP支付的返回值。直接返回与QQ钱包文档对应的字段
      * @param array $ret
      *
      * @return array $data

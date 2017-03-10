@@ -10,13 +10,13 @@
 namespace Payment\Charge\Qq;
 
 use Payment\Common\Qq\Data\Charge\QrChargeData;
-use Payment\Common\Qq\WxBaseStrategy;
+use Payment\Common\Qq\QqBaseStrategy;
 
 class QqQrCharge extends QqBaseStrategy
 {
     protected function getBuildDataClass()
     {
-        $this->config->tradeType = 'NATIVE';// 微信文档这里写错了
+        $this->config->tradeType = 'NATIVE';//
         return QrChargeData::class;
     }
 

@@ -13,7 +13,7 @@ use Payment\Utils\ArrayUtil;
 /**
  * Class TransferData
  *
- * 微信当前也仅支持单笔付款，不支持批量
+ * QQ钱包当前也仅支持单笔付款，不支持批量
  *
  * @property string $trans_no  商户转账唯一订单号
  * @property string $openid 商户appid下，某用户的openid

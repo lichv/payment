@@ -15,7 +15,7 @@ use Payment\Utils\ArrayUtil;
  * Class RefundData
  *
  * @property string $refund_no  商户系统内部的退款单号，商户系统内部唯一，同一退款单号多次请求只退一笔
- * @property string $transaction_id  微信生成的订单号，在支付通知中有返回
+ * @property string $transaction_id  QQ钱包生成的订单号，在支付通知中有返回
  * @property string $out_trade_no  商户侧传给微信的订单号
  * @property int $total_fee 订单总金额，单位为分，只能为整数
  * @property int $refund_fee 退款总金额，订单总金额，单位为分，只能为整数
@@ -60,7 +60,7 @@ class RefundData extends QqBaseData
 
         // 二者不能同时为空
         if (empty($transactionId) && empty($outTradeNo)) {
-            throw new PayException('必须提供微信交易号或商户网站唯一订单号。建议使用微信交易号');
+            throw new PayException('必须提供QQ钱包交易号或商户网站唯一订单号。建议使用QQ钱包交易号');
         }
 
         $this->total_fee = bcmul($totalFee, 100, 0);// 微信以分为单位

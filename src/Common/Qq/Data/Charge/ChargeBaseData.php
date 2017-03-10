@@ -11,7 +11,7 @@
 namespace Payment\Common\Qq\Data\Charge;
 
 use Payment\Common\PayException;
-use Payment\Common\Qq\Data\WxBaseData;
+use Payment\Common\Qq\Data\QqBaseData;
 use Payment\Config;
 
 /**

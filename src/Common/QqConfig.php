@@ -2,7 +2,7 @@
 /**
  * @author: lichv
  * @createTime: 2016-07-15 14:56
- * @description: 微信配置文件
+ * @description: QQ钱包配置文件
  * @link      https://github.com/lichv/payment
  * 
  */
@@ -14,10 +14,10 @@ use Payment\Utils\StrUtil;
 
 final class QqConfig extends ConfigInterface
 {
-    // 微信分配的公众账号ID
+    // QQ钱包分配的公众账号ID
     public $appId;
 
-    // 微信支付分配的商户号
+    // QQ钱包支付分配的商户号
     public $mchId;
 
     // 随机字符串，不长于32位
@@ -79,7 +79,7 @@ final class QqConfig extends ConfigInterface
 
 
     /**
-     * 初始化微信配置文件
+     * 初始化QQ钱包配置文件
      * WxConfig constructor.
      * @param array $config
      * @throws PayException
@@ -109,14 +109,14 @@ final class QqConfig extends ConfigInterface
         if (key_exists('app_id', $config) && !empty($config['app_id'])) {
             $this->appId = $config['app_id'];
         } else {
-            throw new PayException('必须提供微信分配的公众账号ID');
+            throw new PayException('必须提供QQ钱包分配的公众账号ID');
         }
 
         // 检查 微信支付分配的商户号
         if (key_exists('mch_id', $config) && !empty($config['mch_id'])) {
             $this->mchId = $config['mch_id'];
         } else {
-            throw new PayException('必须提供微信支付分配的商户号');
+            throw new PayException('必须提供QQ钱包支付分配的商户号');
         }
 
         // 检查 异步通知的url
@@ -134,7 +134,7 @@ final class QqConfig extends ConfigInterface
         if (key_exists('md5_key', $config) && !empty($config['md5_key'])) {
             $this->md5Key = $config['md5_key'];
         } else {
-            throw new PayException('MD5 Key 不能为空，再微信商户后台可查看');
+            throw new PayException('MD5 Key 不能为空，在QQ钱包商户后台可查看');
         }
 
         // 设置支付的货币类型

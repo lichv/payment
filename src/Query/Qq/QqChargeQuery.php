@@ -26,7 +26,7 @@ class QqChargeQuery extends QqBaseStrategy
     }
 
     /**
-     * 返回微信查询的url
+     * 返回QQ钱包查询的url
      * @return string
      * @author lichv
      */

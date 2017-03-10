@@ -2,7 +2,7 @@
 /**
  * @author: lichv
  * @createTime: 2016-07-28 18:05
- * @description: 微信支付相关接口的数据基类
+ * @description: QQ钱包支付相关接口的数据基类
  */
 
 namespace Payment\Common\Qq\Data;
@@ -15,8 +15,8 @@ use Payment\Utils\ArrayUtil;
 /**
  * Class BaseData
  *
- * @property string $appId   微信分配的公众账号ID
- * @property string $mchId  微信支付分配的商户号
+ * @property string $appId   QQ钱包分配的公众账号ID
+ * @property string $mchId  QQ钱包支付分配的商户号
  * @property string $nonceStr  随机字符串，不长于32位
  * @property string $notifyUrl  异步通知的url
  * @property string $feeType  符合ISO 4217标准的三位字母代码 默认位人民币
@@ -30,13 +30,13 @@ use Payment\Utils\ArrayUtil;
  * @property string $tradeType   支付类型
  * @property string $terminal_id 终端设备号(门店号或收银设备ID)，默认请传"WEB"
  *
- * @package Payment\Common\Weixin\Dataa
+ * @package Payment\Common\Qq\Dataa
  */
 abstract class QqBaseData extends BaseData
 {
 
     /**
-     * 签名算法实现  便于后期扩展微信不同的加密方式
+     * 签名算法实现  便于后期扩展QQ钱包不同的加密方式
      * @param string $signStr
      * @return string
      */

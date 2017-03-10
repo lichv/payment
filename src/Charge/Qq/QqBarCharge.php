@@ -10,7 +10,7 @@
 namespace Payment\Charge\Qq;
 
 use Payment\Common\Qq\Data\Charge\BarChargeData;
-use Payment\Common\Qq\WxBaseStrategy;
+use Payment\Common\Qq\QqBaseStrategy;
 use Payment\Common\QqConfig;
 
 class QqBarCharge extends QqBaseStrategy

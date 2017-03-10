@@ -15,7 +15,7 @@ use Payment\Utils\Curl;
 
 /**
  * Class WxRefund
- * 微信退款操作
+ * QQ钱包退款操作
  * @package Payment\Refund
  * anthor lichv
  */
@@ -27,7 +27,7 @@ class QqRefund extends QqBaseStrategy
     }
 
     /**
-     * 微信退款接口，需要用到相关加密文件及证书，需要重新进行curl的设置
+     * QQ钱包退款接口，需要用到相关加密文件及证书，需要重新进行curl的设置
      * @param string $xml
      * @param string $url
      * @return array

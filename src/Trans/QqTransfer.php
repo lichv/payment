@@ -35,7 +35,7 @@ class QqTransfer extends QqBaseStrategy
     }
 
     /**
-     * 微信退款接口，需要用到相关加密文件及证书，需要重新进行curl的设置
+     * QQ钱包退款接口，需要用到相关加密文件及证书，需要重新进行curl的设置
      * @param string $xml
      * @param string $url
      * @return array

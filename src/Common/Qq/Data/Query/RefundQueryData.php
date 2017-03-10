@@ -14,12 +14,12 @@ use Payment\Common\Qq\Data\QqBaseData;
 use Payment\Utils\ArrayUtil;
 
 /**
- * 微信退款接口查询
+ * QQ钱包退款接口查询
  *
- * @property string $transaction_id 微信的订单号，优先使用
+ * @property string $transaction_id QQ钱包的订单号，优先使用
  * @property string $out_trade_no 商户系统内部的订单号
- * @property string $refund_no  商户侧传给微信的退款单号
- * @property string $refund_id  微信生成的退款单号，在申请退款接口有返回
+ * @property string $refund_no  商户侧传给QQ钱包的退款单号
+ * @property string $refund_id  QQ钱包生成的退款单号，在申请退款接口有返回
  *
  * Class RefundQueryData
  * @package Payment\Common\Weixin\Data\Query
@@ -54,7 +54,7 @@ class RefundQueryData extends QqBaseData
 
         // 四者不能同时为空
         if (empty($transactionId) && empty($orderNo) && empty($refundNo) && empty($refundId)) {
-            throw new PayException('查询退款  必须提供微信交易号、商户订单号、商户退款单号、微信退款交易号中的一种');
+            throw new PayException('查询退款  必须提供QQ钱包交易号、商户订单号、商户退款单号、QQ钱包退款交易号中的一种');
         }
     }
 }

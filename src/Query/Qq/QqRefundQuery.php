@@ -13,7 +13,7 @@ use Payment\Common\QqConfig;
 
 /**
  *
- * 微信退款订单查询
+ * QQ钱包退款订单查询
  * Class WxRefudnQuery
  * @package Payment\Query
  * anthor lichv

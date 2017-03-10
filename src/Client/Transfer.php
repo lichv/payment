@@ -21,6 +21,8 @@ class Transfer
 
         Config::WX_TRANSFER,// 微信
 
+        Config::QQ_TRANSFER,// 微信
+
         'cmb_wallet',// 招行一网通
         'applepay_upacp',// Apple Pay
     ];

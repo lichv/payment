@@ -2,7 +2,7 @@
 /**
  * @author: lichv
  * @createTime: 2016-07-28 18:04
- * @description: 微信的策略基类
+ * @description: QQ钱包的策略基类
  */
 
 namespace Payment\Common\Qq;
@@ -17,18 +17,18 @@ use Payment\Utils\Curl;
 use Payment\Utils\DataParser;
 
 /**
- * Class WxBaseStrategy
- * 微信策略基类
+ * Class QqBaseStrategy
+ * QQ钱包策略基类
  *
- * @package Payment\Common\Weixin
+ * @package Payment\Common\Qq
  * anthor lichv
  */
 abstract class QqBaseStrategy implements BaseStrategy
 {
 
     /**
-     * 支付宝的配置文件
-     * @var WxConfig $config
+     * QQ钱包的配置文件
+     * @var QqConfig $config
      */
     protected $config;
 
@@ -39,7 +39,7 @@ abstract class QqBaseStrategy implements BaseStrategy
     protected $reqData;
 
     /**
-     * WxBaseStrategy constructor.
+     * QqBaseStrategy constructor.
      * @param array $config
      * @throws PayException
      */
@@ -83,10 +83,10 @@ abstract class QqBaseStrategy implements BaseStrategy
         // 格式化为数组
         $retData = DataParser::toArray($responseTxt['body']);
         if ($retData['return_code'] != 'SUCCESS') {
-            throw new PayException('微信返回错误提示:' . $retData['return_msg']);
+            throw new PayException('QQ钱包返回错误提示:' . $retData['return_msg']);
         }
         if ($retData['result_code'] != 'SUCCESS') {
-            throw new PayException('微信返回错误提示:' . $retData['err_code_des']);
+            throw new PayException('QQ钱包返回错误提示:' . $retData['err_code_des']);
         }
 
         return $retData;
@@ -141,14 +141,14 @@ abstract class QqBaseStrategy implements BaseStrategy
         // 检查返回的数据是否被篡改
         $flag = $this->signVerify($ret);
         if (!$flag) {
-            throw new PayException('微信返回数据被篡改。请检查网络是否安全！');
+            throw new PayException('QQ钱包返回数据被篡改。请检查网络是否安全！');
         }
 
         return $this->retData($ret);
     }
 
     /**
-     * 处理微信的返回值并返回给客户端
+     * 处理QQ钱包的返回值并返回给客户端
      * @param array $ret
      * @return mixed
      * @author lichv
@@ -159,7 +159,7 @@ abstract class QqBaseStrategy implements BaseStrategy
     }
 
     /**
-     * 检查微信返回的数据是否被篡改过
+     * 检查QQ钱包返回的数据是否被篡改过
      * @param array $retData
      * @return boolean
      * @author lichv

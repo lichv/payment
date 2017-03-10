@@ -14,8 +14,8 @@ use Payment\Utils\ArrayUtil;
 use Payment\Utils\DataParser;
 
 /**
- * Class WxNotify
- * 微信回调处理
+ * Class QqNotify
+ * QQ钱包回调处理
  * @package Payment\Notify
  * anthor lichv
  */
@@ -23,7 +23,7 @@ class QqNotify extends NotifyStrategy
 {
 
     /**
-     * WxNotify constructor.
+     * QqNotify constructor.
      * @param array $config
      * @throws PayException
      */
@@ -39,7 +39,7 @@ class QqNotify extends NotifyStrategy
     }
 
     /**
-     * 获取微信返回的异步通知数据
+     * 获取QQ钱包返回的异步通知数据
      * @return array|bool
      * @author lichv
      */
@@ -60,7 +60,7 @@ class QqNotify extends NotifyStrategy
     }
 
     /**
-     * 检查微信异步通知的数据是否正确
+     * 检查QQ钱包异步通知的数据是否正确
      * @param array $data
      *
      * @author lichv
@@ -79,7 +79,7 @@ class QqNotify extends NotifyStrategy
     }
 
     /**
-     * 检查微信返回的数据是否被篡改过
+     * 检查QQ钱包返回的数据是否被篡改过
      * @param array $retData
      * @return boolean
      * @author lichv

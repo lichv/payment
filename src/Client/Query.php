@@ -29,6 +29,11 @@ class Query
         Config::WX_REFUND,
         Config::WX_RED,
         Config::WX_TRANSFER,
+
+        Config::QQ_CHARGE,
+        Config::QQ_REFUND,
+        Config::QQ_RED,
+        Config::QQ_TRANSFER,
     ];
 
     /**
