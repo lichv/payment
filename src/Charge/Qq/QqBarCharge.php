@@ -2,7 +2,7 @@
 /**
  * @author: lichv
  * @createTime: 2017-03-06 18:29
- * @description: 微信 刷卡支付  对应支付宝的条码支付
+ * @description: QQ钱包 刷卡支付  对应支付宝的条码支付
  * @link      https://github.com/lichv/payment
  * 
  */

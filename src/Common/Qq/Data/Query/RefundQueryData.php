@@ -47,10 +47,10 @@ class RefundQueryData extends QqBaseData
 
     protected function checkDataParam()
     {
-        $transactionId = $this->transaction_id;// 微信交易号，查询效率高
+        $transactionId = $this->transaction_id;// QQ钱包交易号，查询效率高
         $orderNo = $this->out_trade_no;// 商户订单号，查询效率低，不建议使用
         $refundNo = $this->refund_no;// 商户的退款单号
-        $refundId = $this->refund_id;// 微信的退款交易号
+        $refundId = $this->refund_id;// QQ钱包的退款交易号
 
         // 四者不能同时为空
         if (empty($transactionId) && empty($orderNo) && empty($refundNo) && empty($refundId)) {

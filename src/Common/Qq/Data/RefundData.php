@@ -63,7 +63,7 @@ class RefundData extends QqBaseData
             throw new PayException('必须提供QQ钱包交易号或商户网站唯一订单号。建议使用QQ钱包交易号');
         }
 
-        $this->total_fee = bcmul($totalFee, 100, 0);// 微信以分为单位
+        $this->total_fee = bcmul($totalFee, 100, 0);// QQ钱包以分为单位
         $this->refund_fee = bcmul($refundFee, 100, 0);
 
         if (bccomp($refundFee, $totalFee, 2) === 1) {

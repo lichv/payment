@@ -46,7 +46,7 @@ class QqNotify extends NotifyStrategy
     public function getNotifyData()
     {
         // php://input 带来的内存压力更小
-        $data = @file_get_contents('php://input');// 等同于微信提供的：$GLOBALS['HTTP_RAW_POST_DATA']
+        $data = @file_get_contents('php://input');// 等同于QQ钱包提供的：$GLOBALS['HTTP_RAW_POST_DATA']
         // 将xml数据格式化为数组
         $arrData = DataParser::toArray($data);
         if (empty($arrData)) {

@@ -79,7 +79,7 @@ class TransferData extends QqBaseData
             throw new PayException('请传入收款人真实姓名');
         }
 
-        // 微信使用的单位位分.此处进行转化
+        // QQ钱包使用的单位位分.此处进行转化
         $this->amount = bcmul($amount, 100, 0);
         if (empty($amount) || $amount < 0) {
             throw new PayException('转账金额错误');

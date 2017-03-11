@@ -21,7 +21,7 @@ class Notify
 
         Config::WX_CHARGE,// 微信
 
-        Config::QQ_CHARGE,// 微信
+        Config::QQ_CHARGE,// QQ钱包
 
         'cmb_wallet',// 招行一网通
         'applepay_upacp',// Apple Pay
