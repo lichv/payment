@@ -14,7 +14,7 @@ use Payment\Common\Qq\Data\QqBaseData;
 use Payment\Utils\ArrayUtil;
 
 /**
- * 微信转账查询   当前QQ钱包仅支持  商户订单号 来进行查询
+ * QQ钱包转账查询   当前QQ钱包仅支持  商户订单号 来进行查询
  *
  * @property string $trans_no  商户转账唯一订单号
  *

@@ -2,7 +2,7 @@
 /**
  * @author: lichv
  * @createTime: 2016-07-14 18:28
- * @description: 微信 公众号 支付接口
+ * @description: QQ钱包 公众号 支付接口
  * @link      https://github.com/lichv/payment
  * 
  */
@@ -16,7 +16,7 @@ use Payment\Common\Qq\QqBaseStrategy;
 /**
  * Class WxPubCharge
  *
- * 微信公众号支付
+ * QQ钱包公众号支付
  *
  * @package Payment\Charge\Qq
  * anthor lichv
@@ -30,7 +30,7 @@ class QqPubCharge extends QqBaseStrategy
     }
 
     /**
-     * 处理公众号支付的返回值。直接返回与微信文档对应的字段
+     * 处理公众号支付的返回值。直接返回与QQ钱包文档对应的字段
      * @param array $ret
      *
      * @return string $data  包含以下键

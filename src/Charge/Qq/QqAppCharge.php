@@ -2,7 +2,7 @@
 /**
  * @author: lichv
  * @createTime: 2016-07-14 17:56
- * @description: 微信 app 支付接口
+ * @description: QQ钱包 app 支付接口
  * @link      https://github.com/lichv/payment
  * 
  */

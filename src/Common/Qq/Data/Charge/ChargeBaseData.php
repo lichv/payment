@@ -61,14 +61,14 @@ abstract class ChargeBaseData extends QqBaseData
             throw new PayException('必须提供商品名称与商品详情');
         }
 
-        // 初始 微信订单过期时间，最短失效时间间隔必须大于5分钟
+        // 初始 QQ钱包订单过期时间，最短失效时间间隔必须大于5分钟
         if ($this->timeout_express - strtotime($this->timeStart) < 5) {
             throw new PayException('必须设置订单过期时间,且需要大于5分钟.如果不正确请检查是否正确设置时区');
         } else {
             $this->timeout_express = date('YmdHis', $this->timeout_express);
         }
 
-        // 微信使用的单位位分.此处进行转化
+        // QQ钱包使用的单位位分.此处进行转化
         $this->amount = bcmul($amount, 100, 0);
 
         // 设置ip地址

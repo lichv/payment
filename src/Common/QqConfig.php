@@ -105,14 +105,14 @@ final class QqConfig extends ConfigInterface
     {
         $config = ArrayUtil::paraFilter($config);
 
-        // 检查 微信分配的公众账号ID
+        // 检查 QQ钱包分配的公众账号ID
         if (key_exists('app_id', $config) && !empty($config['app_id'])) {
             $this->appId = $config['app_id'];
         } else {
             throw new PayException('必须提供QQ钱包分配的公众账号ID');
         }
 
-        // 检查 微信支付分配的商户号
+        // 检查 QQ钱包支付分配的商户号
         if (key_exists('mch_id', $config) && !empty($config['mch_id'])) {
             $this->mchId = $config['mch_id'];
         } else {

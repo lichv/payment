@@ -16,7 +16,6 @@ use Payment\Utils\ArrayUtil;
  *
  * @inheritdoc
  * @property string $product_id  扫码支付时,必须设置该参数
- * @property string $openid  trade_type=JSAPI，此参数必传，用户在商户appid下的唯一标识
  *
  * @package Payment\Common\Qq\Data\Charge
  */
@@ -50,7 +49,6 @@ class QrChargeData extends ChargeBaseData
             'spbill_create_ip'  => trim($this->client_ip),
             'time_start'    => $this->timeStart,
             'time_expire'   => $this->timeout_express,
-            'openid' => $this->openid,
             'product_id'    => $this->product_id,
         ];
 
@@ -66,12 +64,6 @@ class QrChargeData extends ChargeBaseData
         $productId = $this->product_id;
         if (empty($productId)) {
             throw new PayException('扫码支付,必须设置商品ID.');
-        }
-
-        // 扫码支付,必须设置openid
-        $openid = $this->openid;
-        if (empty($openid)) {
-            throw new PayException('用户在商户appid下的唯一标识,公众号支付,必须设置该参数.');
         }
     }
 }

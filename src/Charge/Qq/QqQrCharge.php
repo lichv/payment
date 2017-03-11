@@ -2,7 +2,7 @@
 /**
  * @author: lichv
  * @createTime: 2016-07-14 18:29
- * @description: 微信 扫码支付  主要用于网站上
+ * @description: QQ钱包 扫码支付  主要用于网站上
  * @link      https://github.com/lichv/payment
  * 
  */

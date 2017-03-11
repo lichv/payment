@@ -106,7 +106,6 @@ class QqTransferQuery extends QqBaseStrategy
                 'transaction_id'  => $data['detail_id'],// 付款单号
                 'status'  => strtolower($data['status']),// 转账状态
                 'reason'    => $data['reason'],// 失败原因
-                'openid'   => $data['openid'],
                 'payee_name'   => $data['transfer_name'],// 收款用户姓名
                 'amount'   => $amount,
                 'pay_date'   => $data['transfer_time'],

@@ -41,7 +41,7 @@ class ChargeQueryData extends QqBaseData
 
     protected function checkDataParam()
     {
-        $transaction_id = $this->transaction_id;// 微信交易号，查询效率高
+        $transaction_id = $this->transaction_id;// QQ钱包交易号，查询效率高
         $order_no = $this->out_trade_no;// 商户订单号，查询效率低，不建议使用
 
         // 二者不能同时为空

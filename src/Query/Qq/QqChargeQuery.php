@@ -84,7 +84,6 @@ class QqChargeQuery extends QqBaseStrategy
                 'amount'   => $totalFee,
                 'channel'   => Config::WX_CHARGE,// 支付查询
                 'order_no'   => $data['out_trade_no'],
-                'buyer_id'   => $data['openid'],
                 'trade_state'   => strtolower($data['trade_state']),
                 'transaction_id'   => $data['transaction_id'],
                 'time_end'   => date('Y-m-d H:i:s', strtotime($data['time_end'])),
