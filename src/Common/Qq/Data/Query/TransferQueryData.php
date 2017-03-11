@@ -19,7 +19,7 @@ use Payment\Utils\ArrayUtil;
  * @property string $trans_no  商户转账唯一订单号
  *
  * Class TransferQueryData
- * @package Payment\Common\Weixin\Data\Query
+ * @package Payment\Common\Qq\Data\Query
  */
 class TransferQueryData extends QqBaseData
 {

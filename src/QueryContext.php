@@ -72,7 +72,7 @@ class QueryContext
                     break;
 
                 default:
-                    throw new PayException('当前仅支持：ALI_CHARGE ALI_REFUND WX_CHARGE WX_REFUND WX_TRANSFER');
+                    throw new PayException('当前仅支持：ALI_CHARGE ALI_REFUND WX_CHARGE WX_REFUND WX_TRANSFER QQ_CHARGE QQ_REFUND');
             }
         } catch (PayException $e) {
             throw $e;

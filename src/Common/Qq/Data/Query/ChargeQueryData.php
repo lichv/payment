@@ -19,7 +19,7 @@ use Payment\Utils\ArrayUtil;
  * @property string $transaction_id QQ钱包的订单号，优先使用
  * @property string $out_trade_no 商户系统内部的订单号
  *
- * @package Payment\Common\Weixin\Data\Query
+ * @package Payment\Common\Qq\Data\Query
  */
 class ChargeQueryData extends QqBaseData
 {

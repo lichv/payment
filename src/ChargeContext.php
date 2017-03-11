@@ -103,7 +103,7 @@ class ChargeContext
                     break;
 
                 default:
-                    throw new PayException('当前仅支持：支付宝 与 微信');
+                    throw new PayException('当前仅支持：支付、 微信、QQ钱包');
             }
         } catch (PayException $e) {
             throw $e;

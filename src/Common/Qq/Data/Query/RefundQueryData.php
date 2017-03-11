@@ -22,7 +22,7 @@ use Payment\Utils\ArrayUtil;
  * @property string $refund_id  QQ钱包生成的退款单号，在申请退款接口有返回
  *
  * Class RefundQueryData
- * @package Payment\Common\Weixin\Data\Query
+ * @package Payment\Common\Qq\Data\Query
  */
 class RefundQueryData extends QqBaseData
 {
