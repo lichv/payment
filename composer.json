@@ -1,8 +1,8 @@
 {
     "name": "lichv/payment",
     "type": "library",
-    "description": "支付宝支付、微信支付集成SDK。整合集成快速接入，支持支付宝最新接口",
-    "keywords": ["alipay", "weixin", "支付宝支付", "微信支付", "集成支付接口SDK"],
+    "description": "支付宝支付、微信支付、QQ钱包集成SDK，整合集成快速接入，支持支付宝最新接口",
+    "keywords": ["alipay", "weixin","qpay", "支付宝支付", "微信支付",  "QQ钱包支付", "集成支付接口SDK"],
     "license": "MIT",
     "authors": [
         {
