@@ -68,9 +68,9 @@ class QqNotify extends NotifyStrategy
      */
     public function checkNotifyData(array $data)
     {
-        if ($data['return_code'] != 'SUCCESS' || $data['result_code'] != 'SUCCESS') {
+        if ($data['return_code'] != 'SUCCESS' || $data['trade_state'] != 'SUCCESS') {
             // $arrData['return_msg']  返回信息，如非空，为错误原因
-            // $data['result_code'] != 'SUCCESS'  表示业务失败
+            // $data['trade_state'] != 'SUCCESS'  表示业务失败
             return false;
         }
 

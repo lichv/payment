@@ -56,7 +56,7 @@ class QqChargeQuery extends QqBaseStrategy
         }
 
         // 业务失败
-        if ($data['result_code'] != 'SUCCESS') {
+        if ($data['trade_state'] != 'SUCCESS') {
             return $retData = [
                 'is_success'    => 'F',
                 'error' => $data['err_code_des']
