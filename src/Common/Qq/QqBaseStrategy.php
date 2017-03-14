@@ -85,7 +85,7 @@ abstract class QqBaseStrategy implements BaseStrategy
         if ($retData['return_code'] != 'SUCCESS') {
             throw new PayException('QQ钱包返回错误提示:' . $retData['return_msg']);
         }
-        if ($retData['trade_state'] != 'SUCCESS') {
+        if ($retData['result_code'] != 'SUCCESS') {
             throw new PayException('QQ钱包返回错误提示:' . $retData['err_code_des']);
         }
 
