@@ -68,7 +68,7 @@ class QqNotify extends NotifyStrategy
      */
     public function checkNotifyData(array $data)
     {
-        if ($data['return_code'] != 'SUCCESS' || $data['trade_state'] != 'SUCCESS') {
+        if ($data['trade_state'] != 'SUCCESS' || $data['trade_state'] != 'SUCCESS') {
             // $arrData['return_msg']  返回信息，如非空，为错误原因
             // $data['trade_state'] != 'SUCCESS'  表示业务失败
             return false;
@@ -134,7 +134,7 @@ class QqNotify extends NotifyStrategy
             'amount'   => $data['total_fee'],
             'trade_type' => $data['trade_type'],
             'transaction_id'   => $data['transaction_id'],
-            'trade_state'   => strtolower($data['return_code']),
+            'trade_state'   => strtolower($data['trade_state']),
             'channel'   => Config::QQ_CHARGE,
         ];
 
@@ -157,13 +157,13 @@ class QqNotify extends NotifyStrategy
     {
         // 默认为成功
         $result = [
-            'return_code'   => 'SUCCESS',
+            'trade_state'   => 'SUCCESS',
             'return_msg'    => 'OK',
         ];
         if (! $flag) {
             // 失败
             $result = [
-                'return_code'   => 'FAIL',
+                'trade_state'   => 'FAIL',
                 'return_msg'    => $msg,
             ];
         }
